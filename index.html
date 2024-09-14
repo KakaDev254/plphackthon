@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KakaDev Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">KakaDev</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">KakaDev</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="./assets/gown.jpg" alt="KakaDev Picture" />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">KakaDev</h1>
+        <p class="section-text-p2">Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2">
+            <a href="./assets/Miregwa Oswere CV.pdf" download>Resume </a>
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="social-container">
+          <a
+            href="https://www.linkedin.com/in/enock-miregwa-8557561b3/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-3x icon"></i>
+          </a>
+
+          <a href="https://github.com/KakaDev254" target="_blank">
+            <i class="fab fa-github fa-3x icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get to know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img
+            src="./assets/profile2.jpg "
+            alt="profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fas fa-briefcase fa-2x icon"></i>
+              <h3>Experience</h3>
+              <p>1 year <br />Software development</p>
+            </div>
+            <div class="details-container">
+              <i class="fas fa-graduation-cap fa-2x icon"></i>
+              <h3>Education</h3>
+              <p>CSD Power Learn <br />BFin University of Nairobi</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I’m a passionate software developer with a background in finance
+              and a deep interest in building scalable, efficient
+              solutions.Since graduating from the University of Nairobi in 2020,
+              I transitioned into software development, driven by a desire to
+              solve real-world problems through technology. My expertise lies in
+              front-end development with HTML, CSS (Tailwind, Bootstrap), and
+              JavaScript frameworks like React, along with back-end technologies
+              such as Node.js, Express, and MongoDB. <br />What drives me is the
+              potential of technology to empower small businesses and bridge
+              gaps in industries, particularly through innovative, user-friendly
+              mobile solutions. My recent work involves building an app that
+              integrates SMEs, reflecting my passion for using tech to support
+              entrepreneurs.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i
+            class="fas fa-angle-double-down icon-arrow"
+            onclick="location.href='./#skills'"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="sills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>Typescript</h3>
+                  <p>basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>Node js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h3>Next Js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <i
+          class="fas fa-angle-double-down icon-arrow"
+          onclick="location.href='./#projects'"
+        ></i>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project1.PNG"
+                alt="project1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project2.jpg"
+                alt="project1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project3.jpg"
+                alt="project1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PLP-WebTechnologies/introduction-to-css-KakaDev254'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <i
+          class="fas fa-angle-double-down icon-arrow"
+          onclick="location.href='./#contact'"
+        ></i>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fas fa-envelope icon contact-icon"></i>
+          <p><a href="malto:examplemail.com">oswereenock@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/enock-miregwa-8557561b3/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 KakaDev. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
